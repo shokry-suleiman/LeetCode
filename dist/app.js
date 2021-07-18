@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
   \*****************************************/
 /***/ (() => {
 
-eval("console.log('Shoukry Suleiman')\n\n//# sourceURL=webpack://leetcode/./src/problems/167._Two_Sum_II.js?");
+eval("/**\r\n * @param {number[]} numbers\r\n * @param {number} target\r\n * @return {number[]}\r\n */\r\n var twoSum = function(numbers, target) {\r\n     let result = [];\r\n    for(let i=0;i<numbers.length;i++){\r\n        let temp = target - numbers[i];\r\n        if(numbers.indexOf(temp) != -1 && numbers.lastIndexOf(temp) > i){\r\n            result = [i+1, numbers.lastIndexOf(temp)+1]\r\n            break;\r\n        }\r\n    }\r\n    return result;\r\n};\r\n\r\n// twoSum([2,7,11,15],9);\r\n// twoSum([2,3,4],6)\r\n// twoSum([-1,0],-1)\r\n// twoSum([0,0,3,4],0)\n\n//# sourceURL=webpack://leetcode/./src/problems/167._Two_Sum_II.js?");
 
 /***/ })
 
